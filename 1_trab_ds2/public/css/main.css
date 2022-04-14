@@ -1,0 +1,52 @@
+header {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px 50px;
+  box-shadow: 0 1px 8px lightcoral;
+}
+h1{
+  background-color: lightblue;
+}
+#nav-title {
+  margin-right: auto;
+  font-size: 1.5em;
+}
+h1 {
+  text-align: center;
+}
+form {
+  background-color: rgb(40, 155, 216);
+  text-align: center;
+  border: hidden;
+}
+
+body {
+    align-items: center;
+    background-color: lightblue;
+}
+
+footer {
+  align-items: center;
+}
+
+.cabecario {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  justify-content: space-around;
+}
+
+
+nav {
+  width: 30%;
+}
+
+table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  background-color: rgb(250, 87, 87);
+}

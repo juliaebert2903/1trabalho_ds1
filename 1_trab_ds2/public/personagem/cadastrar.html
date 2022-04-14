@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Cadastrar personagens</title>
+</head>
+<body>
+    <h1>Cadastro de Personagens</h1>
+
+    <form action="/personagem" method="POST">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome">
+        <br><br>
+        <label for="elemento">Elemento:</label><br>
+        <input type="radio" name="elemento" id="cryo" value="cryo">
+        <label for="cryo">Cryo</label><br>
+        <input type="radio" name="elemento" id="pyro" value="pyro">
+        <label for="pyro">Pyro</label><br>
+        <input type="radio" name="elemento" id="anemo" value="anemo">
+        <label for="anemo">Anemo</label><br>
+        <input type="radio" name="elemento" id="geo" value="geo">
+        <label for="geo">Geo</label><br>
+        <input type="radio" name="elemento" id="eletro" value="eletro">
+        <label for="eletro">Eletro</label><br>
+        <input type="radio" name="elemento" id="hydro" value="hydro">
+        <label for="hydro">Hydro</label><br>
+        <input type="radio" name="elemento" id="dendro" value="dendro">
+        <label for="dendro">Dendro</label><br>
+        <br><br>
+        <label for="arma">Arma: </label><br>
+        <input type="radio" name="arma" id="espada" value="espada">
+        <label for="espada">Espada</label><br>
+        <input type="radio" name="arma" id="espadao" value="espadao">
+        <label for="espadao">Espadão</label><br>
+        <input type="radio" name="arma" id="arco" value="arco">
+        <label for="arco">Arco e Flecha</label><br>
+        <input type="radio" name="arma" id="lanca" value="lanca">
+        <label for="lanca">Lança</label><br>
+        <input type="radio" name="arma" id="catalizador" value="catalizador">
+        <label for="catalizador">Catalizador</label><br>
+        <br><br>
+        <label for="historia">Lore: </label>
+        <input type="text" name="historia" id="historia">
+        <br><br>
+        <label for="aniver">Aniversário: </label>
+        <input type="date" name="aniver" id="aniver">
+        <br><br>
+        <button type="submit" name="cadastrar" value="cadastrar">Cadastrar</button>
+    </form>
+</body>
+</html>

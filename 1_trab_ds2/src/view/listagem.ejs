@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<link rel="stylesheet" href="/css/main.css">
+<%- include('includes/head') %>
+
+<body>
+
+    <%- include('includes/navbar') %>    
+
+    <% if (user) { %>
+      <h1>Bem vind@ <%= user.nome %></h1>
+    <% } %>
+
+    <h1>Lista de todos os personagens</h1>
+
+    <table id="characters">
+        
+          
+          <% personagens.forEach(personagem => { %>
+          <tr>
+            <td><%= personagem.nome %></td>
+            <td> <a href="/personagem/<%= personagem.id %>"> Ver detalhes </a> </td>
+          </tr>
+        <% }) %>
+    </table>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('includes/head') %>
+
+<body>
+
+    <%- include('includes/navbar') %>    
+
+    <h1>Personagem:  <%= personagens.nome %></h1><br>
+    <h2>Elemento:  <%= personagens.elemento %></h2><br>
+    <h3>Arma: <%= personagens.arma %></h3><br>
+    <h4>Aniversário <%= personagens.aniver %></h4><br>
+<br>
+    <p>Lore: <br> <%= personagens.historia %></p>
+
+    <a href="/personagens/alterar/<%= personagens.id %>">ALTERAR</a>
+    <br/><br/>
+    <a href="/perosnagens/deletar/<%= personagens.id %>">DELETAR</a>
+</body>
+</html>
+
